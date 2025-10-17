@@ -164,3 +164,40 @@ if 'pinapple' in favorite_fruits:
 if 'avocado' in favorite_fruits:
     print('You really like avocado!')
 print(f"\nWhat an amazing choice, you're really loved it!")
+
+
+
+# Using if Statements with Lists
+
+# Checking for Special Items
+
+requested_toppings =  ['injera', 'shiro', 'bayant']
+for requested_topping in requested_toppings:
+    if requested_topping == 'cabbage':
+        print('Sorry, now we are out of cabbage!')
+    # elif requested_topping in requested_toppings:
+    #     print('Successfully you have a chance to get our offers!')
+    else:
+        print(f"\tAdding {requested_topping.title()}")
+    print(f"Our cafe offers {requested_topping}!")
+
+        # Checking That a List Is Not Empty
+
+requested_tops = []
+if requested_tops:
+    for requested_topping in requested_tops:
+        print(f"\nAdding {requested_topping}")
+    print(f"\nFinished with making your offers!")
+else:
+    print(f"\nAre you sure you want build your offers!")
+
+# Using multiple lists
+available_list = ['mushrooms', 'olive', 'french fries', 'extra cheese']
+requested_topping = ['french fries', 'extra cheese']
+
+for request_top in requested_topping:
+    if requested_topping in available_list:
+        print(f'Adding {request_top}')
+    else:
+        print(f"Sorry, we don't have items {request_top}.")
+print(f"\nFinished making your order!")

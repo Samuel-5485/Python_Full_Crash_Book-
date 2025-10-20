@@ -123,3 +123,21 @@ for name in favorite_language.keys():
     if name in friends:
         language = favorite_language[name].title()
         print(f"\t{name.title()}, I see you bye language {language}!")
+
+#Looping Through a Dictionary’s Keys in a Particular Order
+
+favorite_language = {
+    "jen": "python",
+    "sarah": "c++",
+    "edward": "rubby"
+}
+for name in sorted(favorite_language.keys()):
+    print(f"{name.title()}, thank you for taking the poll.")
+
+#Looping Through All Values in a Dictionary
+
+print("\nThe following languages have been mentioned")
+for language in favorite_language.values():
+    print(language.title())
+
+  
